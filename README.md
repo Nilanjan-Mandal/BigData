@@ -1,14 +1,5 @@
-# bigdatalearning
-Learning Big-data
-This Repo is only ment to be used by public to learn bigadata 
+# Let's Learn BigData
 
 
-This is the second change i am doing now
+This Repo is only meant to be used by Public to learn BigaData.  
 
-
-
-Th is third change form github UI.
-
-Hi, This is my second session!
-
-Enjoy the git learning`
