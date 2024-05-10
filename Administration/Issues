@@ -1,0 +1,56 @@
+CLOUDERA MANAGER
+----------------
+1. Not Coming up after the patch.
+2. MySql Troubleshoot
+3. Unable to login to Cloudera Manager
+
+HDFS
+----
+1. HDFS is not coming out of safe mode.
+2. RPC LANTENCY
+
+HIVE
+----
+1. HIVE Connection error
+2. HiveMetastore is down
+
+Knox
+----
+1. Not able to access Hue via Knox
+
+IMPALA
+------
+1. Impala Coordinator keep going down
+2. Problem processing audits for IMPALAD : Audit Pipeline Test
+3. #1040792 Impala Issue
+4. Impala connection error
+5. Impala query running out of memory
+6. Impala admission control is not working in HUE
+7. Impala coordinator is not coming up
+
+
+RANGER
+------
+
+Yarn
+----
+Multiple Yarn and Hadoop jobs are failing (Could not obtain block)
+SMALL FILES
+
+JOB FAILURE
+-----------
+Hadoop job connection failure
+Oozie jobs are failing
+spark job fail with GSS initiate errors while connecting to Hive metastore
+Memory
+Spark Streaming jobs failed with TransportClient error
+Hadoop jobs failed with the data exceeds error
+
+
+
+SECURITY
+--------
+
+-- SSL Medium Strength Cipher Suites Supported (SWEET32)
+-- Java Upgrade
+-- Process to disable TLS 1.0 & TLS 1.1
