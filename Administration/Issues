@@ -7,7 +7,8 @@ CLOUDERA MANAGER
 HDFS
 ----
 1. HDFS is not coming out of safe mode.
-2. RPC LANTENCY
+2. RPC LANTaNCY
+  - > Remote Procedure Call latency. 
 
 HIVE
 ----
