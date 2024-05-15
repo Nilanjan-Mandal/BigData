@@ -6,7 +6,7 @@ CLOUDERA MANAGER
 
 HDFS
 ----
-1. HDFS is not coming out of safe mode.
+1. Name-Node is not coming out of safe mode.
 2. RPC LANTENCY
 
 HIVE
@@ -29,6 +29,11 @@ IMPALA
 7. Impala coordinator is not coming up
 
 
+SPARK
+------
+1. Out Of Memory Issue
+2. 
+
 RANGER
 ------
 
@@ -36,6 +41,7 @@ Yarn
 ----
 Multiple Yarn and Hadoop jobs are failing (Could not obtain block)
 SMALL FILES
+-->
 
 JOB FAILURE
 -----------
