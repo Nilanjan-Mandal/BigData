@@ -9,7 +9,10 @@ object Read_File extends App {
 
   // Print the First Line of the file
   sourceRDD.take(1).foreach(println)
+
   // Print the entire file
   sourceRDD.foreach(println)
 
+
+  sc.stop()
 }
