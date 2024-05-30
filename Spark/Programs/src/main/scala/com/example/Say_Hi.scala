@@ -1,6 +1,6 @@
 package com.example
 
-object Hello_World extends App {
+object Say_Hi extends App {
 
   println("Hello World")
 

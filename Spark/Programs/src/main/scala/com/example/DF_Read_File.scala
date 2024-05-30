@@ -3,7 +3,7 @@ package com.example
 import org.apache.hadoop.fs.shell.Truncate
 import org.apache.spark.sql.SparkSession
 
-object Read_File_DF extends App {
+object DF_Read_File extends App {
 
   val spark = SparkSession
     .builder()
