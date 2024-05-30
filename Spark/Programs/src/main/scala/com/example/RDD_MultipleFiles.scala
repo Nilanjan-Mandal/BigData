@@ -2,7 +2,7 @@ package com.example
 
 import org.apache.spark.sql.SparkSession
 
-object RDD_Multiple_files extends App {
+object RDD_MultipleFiles extends App {
 
   val spark = SparkSession
     .builder()
@@ -13,7 +13,7 @@ object RDD_Multiple_files extends App {
   val sc = spark.sparkContext
 
   val path = "/Users/nilanjan/Documents/IT/Bigdata/Spark/folder/readfile.txt,/Users/nilanjan/Documents/IT/Bigdata/Spark/folder/readfile1.txt"
-  
+
   val rdd = sc.textFile(path)
   rdd.collect().foreach(println)
 

@@ -3,7 +3,7 @@ package com.example
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.SparkSession
 
-object Word_Count extends App {
+object RDD_WordCount extends App {
 
 
   val spark = SparkSession

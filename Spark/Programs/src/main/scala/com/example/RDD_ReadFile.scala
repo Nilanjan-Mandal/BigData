@@ -2,7 +2,7 @@ package com.example
 
 import org.apache.spark.SparkContext
 
-object RDD_Read_file extends App {
+object RDD_ReadFile extends App {
 
   val sc = new SparkContext(master = "local", appName = "Read Text")
   val sourceRDD = sc
