@@ -2,7 +2,7 @@ package com.example
 
 import org.apache.spark.SparkContext
 
-object Read_File extends App {
+object RDD_Read_file extends App {
 
   val sc = new SparkContext(master = "local", appName = "Read Text")
   val sourceRDD = sc.textFile(path = "/Users/nilanjan/Documents/IT/Bigdata/Spark/folder/readfile.txt")
