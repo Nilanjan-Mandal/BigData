@@ -12,11 +12,10 @@ object DF_ReadFile extends App {
     .getOrCreate()
 
   // Path
-  val csvpath = "/Users/nilanjan/Documents/IT/Bigdata/Spark/folder/Performance.csv"
-  val textpath = "/Users/nilanjan/Documents/IT/Bigdata/Spark/folder/readfile1.txt"
+  val csvpath = "/Users/nilanjan/Documents/IT/BigData/Spark/Project/Files/Performance.csv"
+  val textpath = "/Users/nilanjan/Documents/IT/BigData/Spark/Project/Files/readfile1.txt"
 
   // Read the file into DataFrame
-
   val dfcsv = spark.read
     .format("csv")
     .option("header", "true")

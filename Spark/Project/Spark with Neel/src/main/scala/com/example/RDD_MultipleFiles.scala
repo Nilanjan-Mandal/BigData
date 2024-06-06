@@ -12,7 +12,7 @@ object RDD_MultipleFiles extends App {
 
   val sc = spark.sparkContext
 
-  val path = "/Users/nilanjan/Documents/IT/Bigdata/Spark/folder/readfile.txt,/Users/nilanjan/Documents/IT/Bigdata/Spark/folder/readfile1.txt"
+  val path = "/Users/nilanjan/Documents/IT/BigData/Spark/Project/Files/readfile.txt,/Users/nilanjan/Documents/IT/BigData/Spark/Project/Files/readfile1.txt"
 
   val rdd = sc.textFile(path)
   rdd.collect().foreach(println)

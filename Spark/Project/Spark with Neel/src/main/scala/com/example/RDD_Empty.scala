@@ -14,8 +14,7 @@ object RDD_Empty extends App {
   val sc = spark.sparkContext
 
   val rdd = sc.emptyRDD[String]
-
-    rdd.collect().foreach(println)
+      rdd.collect().foreach(println)
 
 spark.stop()
 }

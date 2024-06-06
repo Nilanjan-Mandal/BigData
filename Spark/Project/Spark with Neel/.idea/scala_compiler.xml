@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="programs_6724,spark" />
+    <profile name="sbt 1" modules="programs_6724,spark,spark-with-neel,spark-with-neel_11,spark-with-neel_2650" />
   </component>
 </project>

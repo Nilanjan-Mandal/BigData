@@ -14,8 +14,8 @@ object RDD_WordCount extends App {
 
   val sc = spark.sparkContext
 
-  val rdd = sc.textFile(path = "/Users/nilanjan/Documents/IT/Bigdata/Spark/folder/readfile.txt")
-    //rdd.foreach(println)
+  val rdd = sc.textFile(path = "/Users/nilanjan/Documents/IT/BigData/Spark/Project/Files/readfile.txt")
+  //rdd.foreach(println)
   val rdd1 = rdd.flatMap(x => x.split(" "))  // It will split the data based on the space
   val rdd2 = rdd1.map(x => (x,1))
   val rdd3 = rdd2.reduceByKey((x,y) => x+y)
