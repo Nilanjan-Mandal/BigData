@@ -3,7 +3,7 @@ package com.example
 import org.apache.hadoop.fs.shell.Truncate
 import org.apache.spark.sql.SparkSession
 
-object DF_ReadFile extends App {
+object DF_LoadFile extends App {
 
   val spark = SparkSession
     .builder()
@@ -18,7 +18,7 @@ object DF_ReadFile extends App {
   // Read the file into DataFrame
   val dfcsv = spark.read
     .format("csv")
-    .option("header", "true")
+      .option("header", "true")
     .option("inferSchema", "true")
     .load(csvpath)
 

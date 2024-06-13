@@ -16,4 +16,6 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.5.1"
 libraryDependencies += "org.apache.spark" %% "spark-streaming" % "3.5.1"
 
 
-
+libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.30"
+libraryDependencies += "org.slf4j" % "slf4j-log4j12" % "1.7.30"
+libraryDependencies += "log4j" % "log4j" % "1.2.17"

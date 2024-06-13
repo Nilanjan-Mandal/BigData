@@ -1,0 +1,24 @@
+1. User Access Management
+    - Centrify
+    - HUE
+2. Certificate deployment
+    - Use of Ansible
+
+3. Security Vulnerability
+    - Java Upgrade
+    - Impose TLS 1.3
+    - Cipher suit
+    - Log4j related
+
+4. Support the Delivery team / MAS Team & work with Vendor(Cloudera)
+    - Patching activity
+    -Working with Audit Team, Installing agents**
+    -Implementation of Hotfix, Upgrade the Cloudera Manager**
+    -Restarting Cloudera Manager**
+    -Initially was in L1 support for Big Data Project**
+    - Running the failed jobs
+    - Checking the availability of the files
+    - Rerunning of Workflows
+
+5. Create Grafana, Prometheus dashboard using the FS Image
+6. Quarterly Patching activity. 
