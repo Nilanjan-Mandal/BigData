@@ -1,0 +1,20 @@
+Create a table
+==============
+create table mobilephones (
+
+        id string,
+        title string，
+        cost float,
+        colors            array<string>,
+        sccreen-size      array<float>,
+        features          map<string, boolean>,
+        information       struct<battery:string, camera:string›
+)
+row format delimited fields terminated by ','
+collection items terminated by '#';
+map keys terminated by ":";
+
+Load data into the table
+========================
+load data local inpath '/home/cloudera/Downloads/mobilephones_new.csv'
+into table mobilephones;

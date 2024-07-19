@@ -1,0 +1,37 @@
+Create a table
+==============
+create table products_no_buckets (
+          id            int,
+          name          string,
+          cost          double,
+          category      string
+          )
+row format delimited fields terminated by ';';
+
+Load data into the table
+========================
+load data local inpath '/home/cloudera/Downloads/newproducts.csv
+into table products no buckets;
+
+SET hive.enforce.bucketing=true;
+
+Create a table with bucket
+==========================
+create table products_w_buckets (
+          id          int,
+          name        string,
+          cost        double,
+          category    string
+          )
+CLUSTERED BY (id) INTO 4 BUCKETS;
+
+Transfer the data in to Bucket Table
+====================================
+from products_no_buckets insert into table products_w_buckets
+select id, name, cost, category;
+
+Display the data
+================
+select * from products_w_buckets TABLESAMPLE (bucket 1 out of 4) ;
+select * from products_w_buckets TABLESAMPLE (bucket 2 out of 4) ;
+select * from products_w_buckets TABLESAMPLE (bucket 4 out of 4) ;

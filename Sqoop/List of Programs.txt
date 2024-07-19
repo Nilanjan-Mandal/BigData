@@ -1,0 +1,3 @@
+1. Run a simple import from a RDBMS
+2. Set Up a SQOOP Job
+3. 

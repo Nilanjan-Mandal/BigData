@@ -18,7 +18,7 @@ object DF_LoadFile extends App {
   // Read the file into DataFrame
   val dfcsv = spark.read
     .format("csv")
-      .option("header", "true")
+    .option("header", "true")
     .option("inferSchema", "true")
     .load(csvpath)
 

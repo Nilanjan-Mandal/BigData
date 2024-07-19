@@ -1,0 +1,38 @@
+Create a table
+==============
+create table mobilephones (
+      id                string,
+      title             string,
+      cost              float,
+      colors            array<string>,
+      sccreen-size      array<float>,
+
+);
+
+Load data into the table
+========================
+insert into table mobilephones
+select "redminote7", "Redmi Note 7", 300, array ("white", "silver", "black"),
+array (float (4.5) )
+UNION ALL
+select "motoGplus", "Moto G Plus", 200, array ("black", "gold"),
+array (float (4.5) , float (5.5)) ;
+
+================================================================================
+Create another table
+====================
+create table mobilephones (
+
+        id string,
+        title string，
+        cost float,
+        colors            array<string>,
+        sccreen-size      array<float>,
+)
+row format delimited fields terminated by ','
+collection items terminated by '#';
+
+Load data into the table
+========================
+load data local inpath '/home/cloudera/Downloads/mobilephones new.csv'
+into table mobilephones

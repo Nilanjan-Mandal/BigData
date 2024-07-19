@@ -1,0 +1,28 @@
+sqoop import \
+--connect jdbc:mysql://quickstart.cloudera:3306/nilanjan \
+--username root \
+--password cloudera \
+--table example \
+--where "ID = 1" \
+--target-dir /user/cloudera/example \
+-m 1
+
+
+sqoop-eval \
+--connect jdbc:mysql://quickstart.cloudera:3306/nilanjan \
+--username root \
+--password cloudera \
+--query "select * from example";
+
+sqoop import \
+--connect jdbc:mysql://quickstart.cloudera:3306/nilanjan \
+--username root \
+--password cloudera \
+--table example \
+--where "ID = 1" \
+--hive-import \
+--hive-database nilanjan \
+--hive-table example \
+--create-hive-table \
+--target-dir /user/cloudera/example \
+--m 1

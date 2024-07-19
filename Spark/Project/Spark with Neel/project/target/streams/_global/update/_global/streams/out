@@ -1,3 +1,4 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/Users/nilanjan/Documents/IT/BigData/Spark/Spark%20with%20Neel/project/"), "spark-with-neel-build")...
-[debug] Done updating ProjectRef(uri("file:/Users/nilanjan/Documents/IT/BigData/Spark/Spark%20with%20Neel/project/"), "spark-with-neel-build")
+[warn] scala-xml_2.12-2.1.0.jar no longer exists at /Users/nilanjan/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.1.0/scala-xml_2.12-2.1.0.jar
+[debug] not up to date. inChanged = false, force = false
+[debug] Updating ProjectRef(uri("file:/Users/nilanjan/Documents/IT/BigData/Spark/Project/Spark%20with%20Neel/project/"), "spark-with-neel-build")...
+[debug] Done updating ProjectRef(uri("file:/Users/nilanjan/Documents/IT/BigData/Spark/Project/Spark%20with%20Neel/project/"), "spark-with-neel-build")

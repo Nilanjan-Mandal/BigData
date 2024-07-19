@@ -1,0 +1,25 @@
+Create a table
+==============
+create table rank_test(
+      name          string,
+      score         int
+      )
+row format delimited
+fields terminated by lines terminated by ';' stored as textfile;
+
+Load data into the table
+========================
+load data local inpath /home/cloudera/Downloads/rank_dataset.csv'
+into table rank_test;
+
+
+select name, score, rank() over(order by score desc) as ranking from rank_test;
+
+select name, score, dense_rank) over(order by score desc) as
+ranking from rank_test;
+
+select name, score, row_number() over(order by score desc) as
+ranking from rank_test;
+
+select name, score, row_number() over (partition by name order by score desc)
+as ranking from rank_test;

@@ -1,0 +1,148 @@
+
+1.
+sqoop-list-databases \
+--connect "jdbc:mysql://quickstart.cloudera:3306" \
+--username retail_dba \
+--password cloudera
+
+2.
+sqoop-list-tables \
+--connect "jdbc:mysql://quickstart.cloudera:3306/retail_db" \
+--username retail_dba \
+--password cloudera
+
+3.
+sqoop-eval
+--connect "jdbc:mysql://quickstart.cloudera:3306" \
+--username retail dba
+--password cloudera
+--query "select * from retail db.customers limit 10" (--query / -e)
+
+
+4.
+sqoop-eval \
+--connect jdbc:mysql://quickstart.cloudera:3306/yelp \
+--username root \
+-e "select * from ratings limit 10" \
+--password cloudera
+
+5.
+sqoop-eval \
+--connect "jdbc:mysql://quickstart.cloudera:3306/test_db" \
+--username root \
+--password cloudera \
+--query "select * from test_db.Customers" >> query.output
+
+**TEXT FILE FORMAT**
+
+sqoop-import
+--connect jdbc:mysql://quickstart.cloudera:3306/retail db
+--username retail dba
+--password cloudera
+--table orders
+--as-textfile \
+-m 4
+--warehouse-dir /user/cloudera/textfileformat
+
+**SEQUENCE FILE FORMAT**
+
+sqoop-import
+--connect jdbc:mysql://quickstart.cloudera:3306/retail db
+--username retail dba
+--password cloudera
+--table orders
+--as-sequencefile \
+-m 4
+--warehouse-dir /user/cloudera/textfileformat
+
+**PARAQUET FILE FORMAT**
+
+sqoop-import
+--connect jdbc:mysql://quickstart.cloudera:3306/retail db
+--username retail dba
+--password cloudera
+--table orders
+--as-paraquetfile \
+-m 4
+--warehouse-dir /user/cloudera/textfileformat
+
+**AVRO FILE FORMAT**
+
+sqoop-import
+--connect jdbc:mysql://quickstart.cloudera:3306/retail db
+--username retail dba
+--password cloudera
+--table orders
+--as-avrodatafile \
+-m 4
+--warehouse-dir /user/cloudera/textfileformat
+
+
+
+sqoop import \
+--connect jdbc:mysql://quickstart.cloudera:3306/retail_db \
+--username root \
+--p \ (Password will take from console now!)
+--table orders \
+-m 1
+--target-dir /queryresult
+
+*********************************************************
+
+sqoop-import-all-tables \
+--connect jdbc:mysql://quickstart.cloudera:3306/retail db \
+--username retail dba \
+--as-sequencefile \         File Format
+-m 4 \ (By Default mapper is 4) | (--num-mappers)
+--warehouse-dir /user/cloudera/sqoopdir \
+--password cloudera
+
+
+******************  Redirecting Logs *********************
+
+
+sqoop import
+--connect jdbc:mysql://quickstart.cloudera:3306/retail db
+--username root
+--password cloudera \
+--table orders
+--warehouse-dir /queryresult4 1>query.out 2>query.err
+
+******************  Import with selected Columns *********************
+
+sqoop-import
+--connect jdbc:mysql://quickstart.cloudera:3306/retail_db
+--username retail dba \
+--password cloudera \
+--table customers \
+--columns customer id,customer fname, customer city \
+--warehouse-dir /user/cloudera/customersresult
+
+
+sqoop-import
+--connect jdbc:mysql://quickstart.cloudera:3306/retail db
+--username retail dba \
+--password cloudera \
+--table orders \
+--columns order_id,order customer id,order_status \
+--where "order_status in ('complete', 'closed')" \
+--warehouse-dir /user/cloudera/customimportresult
+
+
+******************  Compression Technique *********************
+
+sqoop-import
+--connect jdbc:mysql://quickstart.cloudera:3306/retail db
+--username retail dba \
+--password cloudera \
+--table orders \
+--compress \ (By Default gzip)
+--warehouse-dir /user/cloudera/compressresult
+
+sqoop-import
+--connect jdbc:mysql://quickstart.cloudera:3306/retail_db \
+--username retail dba \
+--password cloudera \
+--table orders \
+--compression-codec BZip2Codec \
+--warehouse-dir /user/cloudera/bzipcompresult

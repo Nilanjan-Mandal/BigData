@@ -1,0 +1,17 @@
+Create a manage table
+
+create table if not exists product_managed (
+     id      string
+    ,id      string
+    ,cost    float
+)
+row format delimited
+fields terminated by ','
+stored as textfile
+
+Load the Data Now
+====================
+Local-
+load data local inpath /home/cloudera/Downloads/Products.csv into table product_managed
+
+load data local inpath /home/cloudera/Downloads/Products.csv overwrite into table product_managed

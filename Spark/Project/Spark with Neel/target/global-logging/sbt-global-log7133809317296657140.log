@@ -1,0 +1,191 @@
+[debug] > Exec(;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/n4/1wv2gh9966b4kqh71rqvhsv40000gn/T/sbt-structure1.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveSourceClassifiers, insertProjectTransitiveDependencies");apply -cp "/Users/nilanjan/Library/Application Support/JetBrains/IdeaIC2024.1/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.3/2024.1.2/sbt-structure-extractor-2024.1.2.jar" "org.jetbrains.sbt.CreateTasks" "sbt.jetbrains.LogDownloadArtifacts";preferScala2;*/*:dumpStructure, Some(95356db1-ccff-41cd-8b8a-0bb6d4f80bf9), Some(CommandSource(console0)))
+[debug] > Exec(set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/n4/1wv2gh9966b4kqh71rqvhsv40000gn/T/sbt-structure1.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveSourceClassifiers, insertProjectTransitiveDependencies"), None, Some(CommandSource(console0)))
+[info] Defining Global / sbtStructureOptions, Global / sbtStructureOutputFile and 1 others.
+[info] The new values will be used by cleanKeepGlobs
+[info] 	Run `last` for details.
+[debug] Defining 
+[debug] 	Global / sbtStructureOptions
+[debug] 	Global / sbtStructureOutputFile
+[debug] 	history
+[debug] 	shellPrompt
+[debug] 
+[debug] The new values will be used by 
+[debug] 	cleanKeepGlobs
+[info] Reapplying settings...
+[info] set current project to spark (in build file:/Users/nilanjan/Documents/IT/BigData/Spark/Project/Spark%20with%20Neel/)
+[debug] > Exec(apply -cp "/Users/nilanjan/Library/Application Support/JetBrains/IdeaIC2024.1/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.3/2024.1.2/sbt-structure-extractor-2024.1.2.jar" "org.jetbrains.sbt.CreateTasks" "sbt.jetbrains.LogDownloadArtifacts", None, Some(CommandSource(console0)))
+[info] Applying State transformations org.jetbrains.sbt.CreateTasks, sbt.jetbrains.LogDownloadArtifacts from /Users/nilanjan/Library/Application Support/JetBrains/IdeaIC2024.1/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.3/2024.1.2/sbt-structure-extractor-2024.1.2.jar
+[info] Reapplying settings...
+[info] set current project to spark (in build file:/Users/nilanjan/Documents/IT/BigData/Spark/Project/Spark%20with%20Neel/)
+[info] Reapplying settings...
+[info] set current project to spark (in build file:/Users/nilanjan/Documents/IT/BigData/Spark/Project/Spark%20with%20Neel/)
+[debug] > Exec(preferScala2, None, Some(CommandSource(console0)))
+[debug] > Exec(*/*:dumpStructure, None, Some(CommandSource(console0)))
+[debug] Evaluating tasks: Global / dumpStructure
+[warn] sbt 0.13 shell syntax is deprecated; use slash syntax instead: Global / dumpStructure
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] scala-library-2.13.8.jar no longer exists at /Users/nilanjan/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar
+[info] downloading https://repo1.maven.org/maven2/org/apache/apache/21/apache-21.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/apache/21/apache-21.pom
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.14/jackson-parent-2.14.pom
+[info] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.14/jackson-parent-2.14.pom
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/oss-parent/48/oss-parent-48.pom
+[info] downloaded https://repo1.maven.org/maven2/com/fasterxml/oss-parent/48/oss-parent-48.pom
+[info] downloading https://repo1.maven.org/maven2/org/junit/junit-bom/5.9.2/junit-bom-5.9.2.pom
+[info] downloading https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-bom/4.2.19/metrics-bom-4.2.19.pom
+[info] downloaded https://repo1.maven.org/maven2/org/junit/junit-bom/5.9.2/junit-bom-5.9.2.pom
+[info] downloaded https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-bom/4.2.19/metrics-bom-4.2.19.pom
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-transport-classes-kqueue/4.1.96.Final/netty-transport-classes-kqueue-4.1.96.Final.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.pom
+[info] downloading https://repo1.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.pom
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-common/4.1.96.Final/netty-common-4.1.96.Final.pom
+[info] downloading https://repo1.maven.org/maven2/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.pom
+[info] downloading https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.1.9/commons-compiler-3.1.9.pom
+[info] downloaded https://repo1.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.pom
+[info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-core_2.13/3.7.0-M11/json4s-core_2.13-3.7.0-M11.pom
+[info] downloaded https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.1.9/commons-compiler-3.1.9.pom
+[info] downloaded https://repo1.maven.org/maven2/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/yetus/audience-annotations/0.13.0/audience-annotations-0.13.0.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/yetus/audience-annotations/0.13.0/audience-annotations-0.13.0.pom
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.pom
+[info] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.13.1/parquet-encoding-1.13.1.pom
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-codec/4.1.96.Final/netty-codec-4.1.96.Final.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.pom
+[info] downloaded https://repo1.maven.org/maven2/io/netty/netty-transport-classes-kqueue/4.1.96.Final/netty-transport-classes-kqueue-4.1.96.Final.pom
+[info] downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.pom
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final.pom
+[info] downloaded https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.pom
+[info] downloaded https://repo1.maven.org/maven2/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final.pom
+[info] downloaded https://repo1.maven.org/maven2/io/netty/netty-common/4.1.96.Final/netty-common-4.1.96.Final.pom
+[info] downloading https://repo1.maven.org/maven2/org/javassist/javassist/3.29.2-GA/javassist-3.29.2-GA.pom
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-transport-classes-epoll/4.1.96.Final/netty-transport-classes-epoll-4.1.96.Final.pom
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-resolver/4.1.96.Final/netty-resolver-4.1.96.Final.pom
+[info] downloaded https://repo1.maven.org/maven2/io/netty/netty-transport-classes-epoll/4.1.96.Final/netty-transport-classes-epoll-4.1.96.Final.pom
+[info] downloaded https://repo1.maven.org/maven2/org/json4s/json4s-core_2.13/3.7.0-M11/json4s-core_2.13-3.7.0-M11.pom
+[info] downloading https://repo1.maven.org/maven2/org/threeten/threeten-extra/1.7.1/threeten-extra-1.7.1.pom
+[info] downloading https://repo1.maven.org/maven2/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.pom
+[info] downloaded https://repo1.maven.org/maven2/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.pom
+[info] downloading https://repo1.maven.org/maven2/org/roaringbitmap/shims/0.9.45/shims-0.9.45.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.13.1/parquet-encoding-1.13.1.pom
+[info] downloading https://repo1.maven.org/maven2/org/codehaus/janino/janino/3.1.9/janino-3.1.9.pom
+[info] downloaded https://repo1.maven.org/maven2/org/codehaus/janino/janino/3.1.9/janino-3.1.9.pom
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-codec-socks/4.1.96.Final/netty-codec-socks-4.1.96.Final.pom
+[info] downloaded https://repo1.maven.org/maven2/io/netty/netty-codec/4.1.96.Final/netty-codec-4.1.96.Final.pom
+[info] downloading https://repo1.maven.org/maven2/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.pom
+[info] downloaded https://repo1.maven.org/maven2/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.pom
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.96.Final/netty-codec-http-4.1.96.Final.pom
+[info] downloaded https://repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.96.Final/netty-codec-http-4.1.96.Final.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.13.0/curator-framework-2.13.0.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.13.0/curator-framework-2.13.0.pom
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-handler-proxy/4.1.96.Final/netty-handler-proxy-4.1.96.Final.pom
+[info] downloaded https://repo1.maven.org/maven2/io/netty/netty-handler-proxy/4.1.96.Final/netty-handler-proxy-4.1.96.Final.pom
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-handler/4.1.96.Final/netty-handler-4.1.96.Final.pom
+[info] downloaded https://repo1.maven.org/maven2/io/netty/netty-handler/4.1.96.Final/netty-handler-4.1.96.Final.pom
+[info] downloading https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom
+[info] downloaded https://repo1.maven.org/maven2/io/netty/netty-codec-socks/4.1.96.Final/netty-codec-socks-4.1.96.Final.pom
+[info] downloaded https://repo1.maven.org/maven2/io/netty/netty-resolver/4.1.96.Final/netty-resolver-4.1.96.Final.pom
+[info] downloaded https://repo1.maven.org/maven2/org/javassist/javassist/3.29.2-GA/javassist-3.29.2-GA.pom
+[info] downloaded https://repo1.maven.org/maven2/org/roaringbitmap/shims/0.9.45/shims-0.9.45.pom
+[info] downloaded https://repo1.maven.org/maven2/org/threeten/threeten-extra/1.7.1/threeten-extra-1.7.1.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/zookeeper/zookeeper-jute/3.6.3/zookeeper-jute-3.6.3.pom
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.pom
+[info] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.pom
+[info] downloaded https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/zookeeper/zookeeper-jute/3.6.3/zookeeper-jute-3.6.3.pom
+[info] downloading https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer-parent/2.8/paranamer-parent-2.8.pom
+[info] downloading https://repo1.maven.org/maven2/org/codehaus/janino/janino-parent/3.1.9/janino-parent-3.1.9.pom
+[info] downloading https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-parent/2.6.1/hk2-parent-2.6.1.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/28/commons-parent-28.pom
+[info] downloading https://repo1.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-project/1.8/leveldbjni-project-1.8.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j/2.20.0/log4j-2.20.0.pom
+[info] downloaded https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer-parent/2.8/paranamer-parent-2.8.pom
+[info] downloading https://repo1.maven.org/maven2/jakarta/annotation/ca-parent/1.3.5/ca-parent-1.3.5.pom
+[info] downloaded https://repo1.maven.org/maven2/org/codehaus/janino/janino-parent/3.1.9/janino-parent-3.1.9.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/yetus/yetus-project/0.13.0/yetus-project-0.13.0.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/yetus/yetus-project/0.13.0/yetus-project-0.13.0.pom
+[info] downloaded https://repo1.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-project/1.8/leveldbjni-project-1.8.pom
+[info] downloaded https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-parent/2.6.1/hk2-parent-2.6.1.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/commons/commons-parent/28/commons-parent-28.pom
+[info] downloaded https://repo1.maven.org/maven2/jakarta/annotation/ca-parent/1.3.5/ca-parent-1.3.5.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j/2.20.0/log4j-2.20.0.pom
+[info] downloading https://repo1.maven.org/maven2/org/junit/junit-bom/5.8.0-M1/junit-bom-5.8.0-M1.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/logging/logging-parent/7/logging-parent-7.pom
+[info] downloading https://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/apache/13/apache-13.pom
+[info] downloaded https://repo1.maven.org/maven2/org/junit/junit-bom/5.8.0-M1/junit-bom-5.8.0-M1.pom
+[info] downloaded https://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.9/fusesource-pom-1.9.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/apache/13/apache-13.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/logging/logging-parent/7/logging-parent-7.pom
+[info] downloading https://repo1.maven.org/maven2/org/codehaus/groovy/groovy-bom/3.0.14/groovy-bom-3.0.14.pom
+[info] downloading https://repo1.maven.org/maven2/jakarta/platform/jakarta.jakartaee-bom/9.0.0/jakarta.jakartaee-bom-9.0.0.pom
+[info] downloading https://repo1.maven.org/maven2/org/springframework/spring-framework-bom/5.3.24/spring-framework-bom-5.3.24.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-bom/2.20.0/log4j-bom-2.20.0.pom
+[info] downloading https://repo1.maven.org/maven2/io/fabric8/kubernetes-client-bom/5.12.2/kubernetes-client-bom-5.12.2.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-bom/2.20.0/log4j-bom-2.20.0.pom
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-bom/2.14.1/jackson-bom-2.14.1.pom
+[info] downloaded https://repo1.maven.org/maven2/io/fabric8/kubernetes-client-bom/5.12.2/kubernetes-client-bom-5.12.2.pom
+[info] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-bom/2.14.1/jackson-bom-2.14.1.pom
+[info] downloaded https://repo1.maven.org/maven2/org/codehaus/groovy/groovy-bom/3.0.14/groovy-bom-3.0.14.pom
+[info] downloaded https://repo1.maven.org/maven2/org/springframework/spring-framework-bom/5.3.24/spring-framework-bom-5.3.24.pom
+[info] downloaded https://repo1.maven.org/maven2/jakarta/platform/jakarta.jakartaee-bom/9.0.0/jakarta.jakartaee-bom-9.0.0.pom
+[info] downloading https://repo1.maven.org/maven2/jakarta/platform/jakartaee-api-parent/9.0.0/jakartaee-api-parent-9.0.0.pom
+[info] downloaded https://repo1.maven.org/maven2/jakarta/platform/jakartaee-api-parent/9.0.0/jakartaee-api-parent-9.0.0.pom
+[info] downloading https://repo1.maven.org/maven2/org/eclipse/ee4j/project/1.0.6/project-1.0.6.pom
+[info] downloaded https://repo1.maven.org/maven2/org/eclipse/ee4j/project/1.0.6/project-1.0.6.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/curator/curator-client/2.13.0/curator-client-2.13.0.pom
+[info] downloading https://repo1.maven.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.pom
+[info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.13/3.7.0-M11/json4s-scalap_2.13-3.7.0-M11.pom
+[info] downloading https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.pom
+[info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.13/3.7.0-M11/json4s-ast_2.13-3.7.0-M11.pom
+[info] downloading https://repo1.maven.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.pom
+[info] downloaded https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.13/3.7.0-M11/json4s-scalap_2.13-3.7.0-M11.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/curator/curator-client/2.13.0/curator-client-2.13.0.pom
+[info] downloaded https://repo1.maven.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.pom
+[info] downloading https://repo1.maven.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.pom
+[info] downloading https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.pom
+[info] downloaded https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.pom
+[info] downloaded https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.13/3.7.0-M11/json4s-ast_2.13-3.7.0-M11.pom
+[info] downloading https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.19.6/protobuf-java-3.19.6.pom
+[info] downloading https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.pom
+[info] downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.pom
+[info] downloaded https://repo1.maven.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.pom
+[info] downloaded https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.pom
+[info] downloaded https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.19.6/protobuf-java-3.19.6.pom
+[info] downloaded https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.pom
+[info] downloaded https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.pom
+[info] downloaded https://repo1.maven.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.pom
+[info] downloading https://repo1.maven.org/maven2/org/objenesis/objenesis-parent/2.5.1/objenesis-parent-2.5.1.pom
+[info] downloaded https://repo1.maven.org/maven2/org/objenesis/objenesis-parent/2.5.1/objenesis-parent-2.5.1.pom
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-bom/2.15.1/jackson-bom-2.15.1.pom
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-bom/4.1.82.Final/netty-bom-4.1.82.Final.pom
+[info] downloading https://repo1.maven.org/maven2/com/google/protobuf/protobuf-bom/3.21.6/protobuf-bom-3.21.6.pom
+[info] downloading https://repo1.maven.org/maven2/com/google/guava/guava-bom/31.1-jre/guava-bom-31.1-jre.pom
+[info] downloading https://repo1.maven.org/maven2/io/grpc/grpc-bom/1.49.1/grpc-bom-1.49.1.pom
+[info] downloaded https://repo1.maven.org/maven2/io/grpc/grpc-bom/1.49.1/grpc-bom-1.49.1.pom
+[info] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-bom/2.15.1/jackson-bom-2.15.1.pom
+[info] downloaded https://repo1.maven.org/maven2/com/google/protobuf/protobuf-bom/3.21.6/protobuf-bom-3.21.6.pom
+[info] downloaded https://repo1.maven.org/maven2/io/netty/netty-bom/4.1.82.Final/netty-bom-4.1.82.Final.pom
+[info] downloaded https://repo1.maven.org/maven2/com/google/guava/guava-bom/31.1-jre/guava-bom-31.1-jre.pom
+[info] downloading https://repo1.maven.org/maven2/com/google/protobuf/protobuf-bom/3.19.6/protobuf-bom-3.19.6.pom
+[info] downloaded https://repo1.maven.org/maven2/com/google/protobuf/protobuf-bom/3.19.6/protobuf-bom-3.19.6.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/arrow/arrow-format/12.0.1/arrow-format-12.0.1.pom
+[info] downloading https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom
+[info] downloading https://repo1.maven.org/maven2/com/google/flatbuffers/flatbuffers-java/1.12.0/flatbuffers-java-1.12.0.pom
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.pom
+[info] downloading https://repo1.maven.org/maven2/org/apache/arrow/arrow-memory-core/12.0.1/arrow-memory-core-12.0.1.pom
+[info] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.pom
+[info] downloaded https://repo1.maven.org/maven2/com/google/flatbuffers/flatbuffers-java/1.12.0/flatbuffers-java-1.12.0.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/arrow/arrow-format/12.0.1/arrow-format-12.0.1.pom
+[info] downloaded https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom
+[info] downloaded https://repo1.maven.org/maven2/org/apache/arrow/arrow-memory-core/12.0.1/arrow-memory-core-12.0.1.pom
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-modules-java8/2.15.1/jackson-modules-java8-2.15.1.pom
+[info] downloading https://repo1.maven.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom
+[info] downloaded https://repo1.maven.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom
+[info] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-modules-java8/2.15.1/jackson-modules-java8-2.15.1.pom
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-base/2.15.1/jackson-base-2.15.1.pom
+[info] downloaded https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-base/2.15.1/jackson-base-2.15.1.pom
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.8/scala-compiler-2.13.8.pom
+[info] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.8/scala-compiler-2.13.8.pom
+[info] downloading https://repo1.maven.org/maven2/org/jline/jline-parent/3.21.0/jline-parent-3.21.0.pom
+[info] downloaded https://repo1.maven.org/maven2/org/jline/jline-parent/3.21.0/jline-parent-3.21.0.pom

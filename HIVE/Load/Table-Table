@@ -1,0 +1,14 @@
+Create a empty manage table.
+
+create table if not exists product_managed2 (
+     id      string
+    ,id      string
+    ,cost    float
+)
+row format delimited
+fields terminated by ','
+stored as textfile
+
+Load the Data Now
+====================
+insert into product_managed2 select * from product_managed2. 

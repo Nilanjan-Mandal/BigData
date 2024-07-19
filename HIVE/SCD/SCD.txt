@@ -1,0 +1,47 @@
+TABLE - 1
+=========
+create table table2 (
+
+        coll    String,
+        col2    int
+        )
+row format delimited fields terminated by ",";
+
+TABLE - 2
+=========
+create table table3 (
+
+        coll    String,
+        col2    int
+        )
+row format delimited fields terminated by ","
+
+Load the data into tables
+=========================
+load data local inpath /home/cloudera/Downloads/table2_data.csv' into table table2;
+
+load data local inpath '/home/cloudera/Downloads/table3_data.csv' into table table3;
+
+
+
+
+
+
+
+select
+case when cdc_codes ='Update' Then table3s
+  when cdc_codes = 'NoChange' then table2s
+  when cdc_codes = 'New' then table3s
+  when cdc_codes = 'Deletes' then table2s
+end
+from (select
+case
+  when table2.coll=table3.coll and table2.co/2=table3.co/2 then 'NoChange
+  when table2.coll=table3.coll and table2.col2<>table3.co/2 then 'Update'
+  when table2.coll is null then 'New'
+  when table3.coll is null then 'Deletes'
+end as cdc_codes,
+concat(table2.coll, /table2.col2) as table2s,
+concat(table3.col,/,table3.co/2) as table3s
+from table2
+full outer join table3 on table2.coll=table3.coll) as b1

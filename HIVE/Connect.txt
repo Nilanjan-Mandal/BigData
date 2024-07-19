@@ -1,0 +1,15 @@
+hive >
+
+create database nilanjan
+
+create table IF NOT EXISTS example (
+
+    ID      INT
+  , NAME    VARCHAR(20)
+
+);
+
+insert into table example (ID,NAME) values (1, 'Jadu')
+
+desc example;
+desc formatted example;

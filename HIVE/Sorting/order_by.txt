@@ -1,0 +1,23 @@
+Create a table
+==============
+create table order (
+    order_id        string,
+    order_value     int
+    )
+row format delimited fields terminated by ';';
+
+Load data into the Table
+========================
+load data local inpath '/home/cloudera/Downloads/order.txt' into table order;
+
+
+select * from order;
+
+select * from order order by order_value desc;
+select * from order sort by order_value desc;
+
+
+
+select order_value from order distribute by order_value;
+select order_value from order distribute by order_value;
+select order_value from order distribute by order_value sort by order_value;

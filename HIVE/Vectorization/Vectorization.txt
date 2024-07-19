@@ -1,0 +1,16 @@
+set hive.vectorized.execution.enabled=true;
+
+Create a Table
+==============
+create table vectorized_table (
+    state           string,
+    id              int
+    )
+stored as orc;
+
+Load Data into the table
+========================
+insert into vectorized_table values('karnataka',1);
+
+
+explain select count(*) from vectorized_table

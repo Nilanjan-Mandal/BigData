@@ -1,0 +1,18 @@
+create external table products (
+        id string,
+        title string,
+        cost float
+        )
+location '/data/';
+
+-- Ideal ways to create the table --
+====================================
+create external table if not exists products (
+        id string,
+        title string,
+        cost float
+)
+row format delimited
+fields terminated by ','
+stored as textfile
+location '/data/';

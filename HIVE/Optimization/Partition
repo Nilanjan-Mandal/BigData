@@ -1,0 +1,67 @@
+Create table with partition - [Static]
+===========================
+create table orders_w_partition (
+            id                string,
+            customer_id       string,
+            product_id        string,
+            quantity          int,
+            amount            double,
+            zipcode           char (5)
+
+)
+partitioned by (state char (2))    -- Mention the Column name here not above
+row format delimited fields terminated by ',';
+
+Load data from files into table
+===============================
+load data local inpath '/home/cloudera/Downloads/orders_CA.csv into table
+orders_w_partition partition (state="CA");
+
+load data local inpath '/home/cloudera/Downloads/orders_CA.csv into table
+orders_w_partition partition (state="CT");
+
+show orders_w_partition
+
+Dynamic Partitioning
+====================
+
+
+Create the normal table
+=======================
+
+create table orders_no_partition (
+          id                string,
+          customer_id       string,
+          product_id        string,
+          quantity          int,
+          amount            double,
+          zipcode           char (5),
+          state             char (2)
+          )
+row format delimited fields terminated by ';';
+
+Load data into non partitioned table:
+=====================================
+load data local inpath '/home/cloudera/Downloads/orders_CA_with_state.csv
+into table orders_no_partition
+
+Create the partitioned table
+============================
+
+create table orders (
+          id                string,
+          customer_id       string,
+          product_id        string,
+          quantity          int,
+          amount            double,
+          zipcode           char (5),
+          )
+partitioned by (state char (2))
+row format delimited fields terminated by ';';
+
+
+Transfer data into partitioned table from non-partitioned table
+===============================================================
+insert into table orders
+partition (state)
+select * from orders no partition;
